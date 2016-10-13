@@ -1,0 +1,22 @@
+{
+    "name": "ryanvade/flarum-ext-remove-avatar-baseurl",
+    "description": "Removes the baseURL from user avatar locations ",
+    "type": "flarum-extension",
+    "keywords": ["links"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Owens",
+            "email": "RyanOwens@linux.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.5"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Avatar BaseURL Remove"
+        }
+    },
+    "minimum-stability": "beta"
+}
