@@ -7,8 +7,7 @@ console.log("Inside ryanvade-flarum-ext-remove-avatar-baseurl");
 
 User.prototype.avatarUrl = function() {
   //console.log("Inside user.prototype.avatarURL");
-  // if the avatarURL contains the baseUrl
-  if(this.attribute('avatarUrl').indexOf(app.forum.attribute('baseUrl')) + 1)
+  if(this.attribute('avatarUrl') && this.attribute('avatarUrl').indexOf(app.forum.attribute('baseUrl')) + 1)
   {
     //console.log("Inside if statement");
     // remove the baseUrl
