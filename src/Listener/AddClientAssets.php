@@ -17,7 +17,7 @@ class AddClientAssets {
 			$event->addAssets( [
 				__DIR__ . '/../../js/forum/dist/extension.js'
 			] );
-			$event->addBootstrapper( 'ryanvade/gravatar/main' );
+			$event->addBootstrapper( 'ryanvade/flarum-ext-remove-avatar-baseurl/main' );
 		}
 	}
 }
