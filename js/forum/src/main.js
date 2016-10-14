@@ -3,13 +3,18 @@ import User from 'flarum/models/User';
 
 app.initializers.add('ryanvade-flarum-ext-remove-avatar-baseurl', () =>  {
 
+console.log("Inside ryanvade-flarum-ext-remove-avatar-baseurl");
+
 User.prototype.avatarUrl = function() {
+  //console.log("Inside user.prototype.avatarURL");
   // if the avatarURL contains the baseUrl
   if(this.attribute('avatarUrl').indexOf(app.forum.attribute('baseUrl')) + 1)
   {
-    var url = this.attribute('avatarUrl');
+    //console.log("Inside if statement");
     // remove the baseUrl
-    url.replace(app.forum.attribute('baseUrl'), '');
+    var url = this.attribute('avatarUrl').replace(app.forum.attribute('baseUrl')+ '/assets/avatars/', '');
+    //console.log();
+    //console.log(app.forum.attribute('baseUrl') + '/assets/avatars/');
     this.pushAttributes({
       // set the new URL
       avatarUrl: url
