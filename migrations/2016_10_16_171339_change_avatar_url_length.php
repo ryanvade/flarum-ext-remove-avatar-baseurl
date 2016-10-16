@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Builder;
 
 return [
     'up' => function (Builder $schema) {
-        Schema::table('users', function($table) {
+        $schema->table('users', function($table) {
 	$table->string('avatar_path', 160)->change();
 	});
     },
