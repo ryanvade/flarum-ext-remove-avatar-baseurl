@@ -3,7 +3,7 @@ import User from 'flarum/models/User';
 
 app.initializers.add('ryanvade-flarum-ext-remove-avatar-baseurl', () =>  {
 
-console.log("Inside ryanvade-flarum-ext-remove-avatar-baseurl");
+//console.log("Inside ryanvade-flarum-ext-remove-avatar-baseurl");
 
 User.prototype.avatarUrl = function() {
   //console.log("Inside user.prototype.avatarURL");
