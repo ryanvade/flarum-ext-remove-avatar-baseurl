@@ -18,6 +18,11 @@ User.prototype.avatarUrl = function() {
       // set the new URL
       avatarUrl: url
     });
+  }else {
+    this.pushAttributes({
+      // set the URL to default
+      avatarUrl: '/images/profiles/profile_default.png'
+    });
   }
   return this.attribute('avatarUrl');
   };
