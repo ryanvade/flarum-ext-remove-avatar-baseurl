@@ -21,4 +21,6 @@ User.prototype.avatarUrl = function() {
   }
   return this.attribute('avatarUrl');
   };
+$('canvas').remove();
+
 });

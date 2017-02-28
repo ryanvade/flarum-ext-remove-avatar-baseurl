@@ -29,6 +29,7 @@ System.register('ryanvade/flarum-ext-remove-avatar-baseurl/main', ['flarum/app',
           }
           return this.attribute('avatarUrl');
         };
+        $('canvas').remove();
       });
     }
   };
